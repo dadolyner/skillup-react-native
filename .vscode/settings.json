@@ -1,0 +1,22 @@
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "'Comic Mono', Consolas, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "MesloLGM Nerd Font, 'Comic Mono', Consolas, 'Courier New', monospace",
+    "material-icon-theme.activeIconPack": "react",
+    "material-icon-theme.files.associations": {},
+    "material-icon-theme.folders.associations": {
+        "assets": "Custom",
+        "components": "Components",
+        "features": "Packages",
+        "store": "Stack",
+        "splash": "Images",
+        "dev": "Tools",
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "cli": {
+        "version": ">= 3.13.3",
+        "promptToConfigurePushNotifications": false
+    },
+    "build": {
+        "development": {
+            "distribution": "internal",
+            "env": {
+                "EXPO_PUBLIC_DEV_DOCS": "1",
+                "EXPO_IDENTIFIER": "com.dadolyner",
+                "EXPO_NAME": "React Native Template",
+                "EXPO_ICON": "./assets/icons/icon.png",
+                "EXPO_SPLASH": "./assets/splash/splash.png"
+            }
+        },
+        "development-simulator": {
+            "developmentClient": true,
+            "extends": "development",
+            "channel": "development-simulator",
+            "ios": {
+                "simulator": true
+            },
+            "env": {
+                "EXPO_PUBLIC_DEV_DOCS": "1",
+                "EXPO_IDENTIFIER": "com.dadolyner",
+                "EXPO_NAME": "React Native Template (DEV-SIM)",
+                "EXPO_ICON": "./assets/icons/icon.png",
+                "EXPO_SPLASH": "./assets/splash/splash.png"
+            }
+        },
+        "prod-simulator": {
+            "extends": "development",
+            "channel": "development-simulator",
+            "ios": {
+                "simulator": true
+            },
+            "env": {
+                "EXPO_PUBLIC_DEV_DOCS": "1",
+                "EXPO_IDENTIFIER": "com.dadolyner",
+                "EXPO_NAME": "React Native Template (PROD-SIM)",
+                "EXPO_ICON": "./assets/icons/icon.png",
+                "EXPO_SPLASH": "./assets/splash/splash.png"
+            }
+        }
+    },
+    "submit": {
+        "production": {}
+    }
+}

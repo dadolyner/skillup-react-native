@@ -1,0 +1,17 @@
+{
+    "template": {
+        "no_connection": "No connection",
+        "home": "Home",
+        "home_screen": "Home screen",
+        "settings": "Settings",
+        "settings_screen": "Settings screen",
+        "go_to_settings": "Go to settings",
+        "go_to_dev": "Go to DEV screen",
+        "back": "Back",
+        "menu": {
+            "home": "Home",
+            "settings": "Settings",
+            "dev": "Dev"
+        }
+    }
+}

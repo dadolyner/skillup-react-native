@@ -1,0 +1,23 @@
+{
+    "extends": "@tsconfig/react-native/tsconfig.json",
+    "exclude": ["node_modules", "dist"],
+    "compilerOptions": {
+        "strict": true,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "types": ["node"],
+        "paths": {
+            "@assets/*": ["./assets/*"],
+            "@constants/*": ["./src/constants/*"],
+            "@components/*": ["./src/components/*"],
+            "@core/*": ["./src/core/*"],
+            "@features/*": ["./src/features/*"],
+            "@store/*": ["./src/store/*"],
+        },
+    },
+    "include": ["**/*.ts", "**/*.tsx"],
+}
