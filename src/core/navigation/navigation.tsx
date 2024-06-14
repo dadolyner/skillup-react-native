@@ -1,5 +1,4 @@
 import { HomeScreen } from "@features/home/HomeScreen"
-import { QuoteScreen } from "@features/quote/QuoteScreen"
 import { SettingsScreen } from "@features/settings/SettingsScreen"
 import { BottomTabNavigationOptions, createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import { StackNavigationOptions, createStackNavigator } from "@react-navigation/stack"
@@ -38,7 +37,6 @@ export function TabNavigator() {
         >
             <Tab.Screen name={Route.HomeTab} component={HomeScreen} />
             <Tab.Screen name={Route.SettingsTab} component={SettingsScreen} />
-            <Tab.Screen name={Route.QuotesTab} component={QuoteScreen} />
         </Tab.Navigator>
     )
 }

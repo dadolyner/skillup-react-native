@@ -1,7 +1,7 @@
 import { Route, useStackNavigator } from "@core/navigation/config"
 import { Icon, TouchableOpacity, View } from "@core/tailwind"
 import { IconProp } from "@fortawesome/fontawesome-svg-core"
-import { faComment, faGear, faHome } from "@fortawesome/free-solid-svg-icons"
+import { faGear, faHome } from "@fortawesome/free-solid-svg-icons"
 import React from "react"
 
 export function TabBar({ tab }: { tab?: Route }) {
@@ -19,12 +19,6 @@ export function TabBar({ tab }: { tab?: Route }) {
             tab: Route.SettingsTab,
             selectedTab: tab,
             onPress: () => navigator.navigate(Route.SettingsTab, {}),
-        },
-        {
-            icon: faComment,
-            tab: Route.QuotesTab,
-            selectedTab: tab,
-            onPress: () => navigator.navigate(Route.QuotesTab, {}),
         },
     ] as const
 
