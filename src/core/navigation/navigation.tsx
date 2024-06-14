@@ -1,4 +1,5 @@
 import { HomeScreen } from "@features/home/HomeScreen"
+import { QuoteScreen } from "@features/quote/QuoteScreen"
 import { SettingsScreen } from "@features/settings/SettingsScreen"
 import { BottomTabNavigationOptions, createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import { StackNavigationOptions, createStackNavigator } from "@react-navigation/stack"
@@ -22,6 +23,7 @@ export function StackNavigator() {
         <Stack.Navigator screenOptions={stackScreenOptions} initialRouteName={Route.Home}>
             <Stack.Screen name={Route.Home} component={TabNavigator} />
             <Stack.Screen name={Route.Settings} component={SettingsScreen} />
+            <Stack.Screen name={Route.Quote} component={QuoteScreen} />
         </Stack.Navigator>
     )
 }

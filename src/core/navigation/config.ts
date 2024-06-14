@@ -7,6 +7,7 @@ export enum Route {
 
     Home = "Home",
     Settings = "Settings",
+    Quote = "Quote",
 }
 
 export type ScreenProps<T extends Route> = StackScreenProps<ScreenParamList, T>
@@ -16,6 +17,7 @@ export type ScreenParamList = {
 
     [Route.Home]: {}
     [Route.Settings]: {}
+    [Route.Quote]: {}
 }
 
 export function useStackNavigator() {
