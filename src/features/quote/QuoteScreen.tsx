@@ -6,12 +6,14 @@ import React from "react"
 import { useTranslation } from "react-i18next"
 
 export function QuoteScreen() {
+    const { t } = useTranslation()
+
     return (
         <>
             <Screen.Wrapper>
                 <Header.Wrapper>
                     <Header.Empty />
-                    <Header.Title title="Quote" />
+                    <Header.Title title={t("template.quote")} />
                 </Header.Wrapper>
 
                 <Content.Wrapper>
@@ -19,7 +21,7 @@ export function QuoteScreen() {
                 </Content.Wrapper>
             </Screen.Wrapper>
 
-            <TabBar tab={Route.Quote} />
+            <TabBar tab={Route.QuotesTab} />
         </>
     )
 }
@@ -30,7 +32,7 @@ function ScreenContent() {
     return (
         <View>
             <View className="mb-4">
-                <Text className="font-regular text-base text-black">{t("template.home_screen")}</Text>
+                <Text className="font-regular text-base text-black">{t("template.quote_screen")}</Text>
             </View>
         </View>
     )

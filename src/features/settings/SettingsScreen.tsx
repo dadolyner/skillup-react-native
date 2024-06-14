@@ -6,12 +6,14 @@ import React from "react"
 import { useTranslation } from "react-i18next"
 
 export function SettingsScreen() {
+    const { t } = useTranslation()
+
     return (
         <>
             <Screen.Wrapper>
                 <Header.Wrapper>
                     <Header.Empty />
-                    <Header.Title title="Settings" />
+                    <Header.Title title={t("template.settings")} />
                 </Header.Wrapper>
 
                 <Content.Wrapper>

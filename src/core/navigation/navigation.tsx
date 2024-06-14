@@ -23,7 +23,6 @@ export function StackNavigator() {
         <Stack.Navigator screenOptions={stackScreenOptions} initialRouteName={Route.Home}>
             <Stack.Screen name={Route.Home} component={TabNavigator} />
             <Stack.Screen name={Route.Settings} component={SettingsScreen} />
-            <Stack.Screen name={Route.Quote} component={QuoteScreen} />
         </Stack.Navigator>
     )
 }
@@ -39,6 +38,7 @@ export function TabNavigator() {
         >
             <Tab.Screen name={Route.HomeTab} component={HomeScreen} />
             <Tab.Screen name={Route.SettingsTab} component={SettingsScreen} />
+            <Tab.Screen name={Route.QuotesTab} component={QuoteScreen} />
         </Tab.Navigator>
     )
 }

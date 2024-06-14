@@ -4,20 +4,20 @@ import { StackNavigationProp, StackScreenProps } from "@react-navigation/stack"
 export enum Route {
     HomeTab = "HomeTab",
     SettingsTab = "SettingsTab",
+    QuotesTab = "Quote",
 
     Home = "Home",
     Settings = "Settings",
-    Quote = "Quote",
 }
 
 export type ScreenProps<T extends Route> = StackScreenProps<ScreenParamList, T>
 export type ScreenParamList = {
     [Route.HomeTab]: {}
     [Route.SettingsTab]: {}
+    [Route.QuotesTab]: {}
 
     [Route.Home]: {}
     [Route.Settings]: {}
-    [Route.Quote]: {}
 }
 
 export function useStackNavigator() {

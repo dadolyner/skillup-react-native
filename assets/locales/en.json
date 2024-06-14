@@ -5,6 +5,8 @@
         "home_screen": "Home screen",
         "settings": "Settings",
         "settings_screen": "Settings screen",
+        "quote": "Quote",
+        "quote_screen": "Quote screen",
         "go_to_settings": "Go to settings",
         "go_to_dev": "Go to DEV screen",
         "back": "Back",
